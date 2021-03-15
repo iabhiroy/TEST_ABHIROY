@@ -12,3 +12,13 @@ Examples:
 |1234576               |
 |A1phaNum3r1cs         |
 
+Scenario Outline: Sending different types of NEGATIVE messages in chats
+Given I Login with user "test@gmail.com" and password "Testing123"
+Then I should see "Log Out" text on the webpage
+When I enter "<messages>" message and click send
+Then I should not see "<messages>" text on the webpage
+Examples:
+|messages|
+|<br>    |
+|<html>  |
+|<head>  |
