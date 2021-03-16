@@ -1,3 +1,5 @@
 require_relative '../pages/signup.rb'
+require_relative '../pages/login.rb'
+require_relative '../pages/chat.rb'
 require_relative 'supporting_functions'
 require_relative 'Common'
